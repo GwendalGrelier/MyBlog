@@ -1,0 +1,30 @@
+<div class="row">
+    <!-- ---------- -->
+    <!-- Formulaire -->
+    <!-- ---------- -->
+    <form class="col-12 col-md-7" method="POST" action="index.php?controller=category&action={action}">
+        
+        <!-- Input Id -->
+        <div class="form-group row" {hidden}>
+            <label class="col-md-3 col-form-label" for="id">ID :</label>
+            <input class="col-md-9 form-control" id="id" name="id" type="text" value="{id}" readonly>
+        </div>
+  
+        <!-- Input Nom -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="nom">Nom de la catégorie :</label>
+            <input class="col-md-9 form-control" id="nom" name="nom" type="text" placeholder="Nom" value="{nom}">
+        </div>
+
+        <!-- Input description -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="description">Description :</label>
+            <input id="description" name="description" class="col-md-9 form-control" type="text" value="{description}">
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <button type="submit" class="offset-md-3 btn btn-success">Soumettre</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top w-100">
+    <a class="navbar-brand">Brand</a>
+    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link {active-news}" href="index.php">Articles</a>
+            </li>
+            {nav_links}
+            
+        </ul>
+    </div>
+    
+    <div class="collapse navbar-collapse ml-auto">
+        {connexionBtn}
+    </div>
+</nav>
+<div class="container">
+
+<!-- 
+    <li class='nav-item'>
+        <a class='nav-link {category}' href='index.php?controller=category'>Categories</a>
+    </li>
+    <li class='nav-item'>
+        <a class='nav-link {user}' href='index.php?controller=user'>Users</a>
+    </li> -->

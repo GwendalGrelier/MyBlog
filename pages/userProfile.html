@@ -1,0 +1,25 @@
+
+
+<div class="row d-flex align-items-start">
+    <aside class="col-3 d-flex flex-column justify-center text-center userData">
+        {modify_user}
+        <img src="{avatar}" alt="User Avatar">
+        <h3>{username}</h3>
+        
+        <h5>{name} {firstname}</h5>
+        <h6>"{quote}"</h6>
+        <p>Number of posts: {post_number}</p>
+        <p class="mt-4 mb-0">Among us since: {creation_date}</p>
+    </aside>
+    <main class="col-9">
+        <div class="jumbotron jumbotron-fluid">
+            <h1 class="display-4 text-center">Articles</h1>
+            <hr class="my-4">
+            <div>
+                {articleList}
+            </div>
+        </div>
+    </main>
+</div>
+
+

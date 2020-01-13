@@ -1,0 +1,48 @@
+
+
+<div class="row">
+    <!-- ########## -->
+    <!-- Formulaire -->
+    <!-- ########## -->
+    <form class="col-12 col-md-7" method="POST" action="index.php?action={action}">
+        
+        <!-- Input Id -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" {display} for="id">ID :</label>
+            <input class="col-md-9 form-control" id="id" name="id" type="text" value="{id}" readonly {display}>
+        </div>
+
+        <!-- Input Titre -->
+        <div class="form-group row">
+            {error_title}
+            <label class="col-md-3 col-form-label" for="title">Votre titre :</label>
+            <input class="col-md-9 form-control" id="title" name="title" type="text" value="{title}" placeholder="Titre">
+        </div>
+
+        <!-- Input Category -->
+        <div class="form-group row">
+            {error_category}
+            <label class="col-md-3 col-form-label" for="category">Category</label>
+            <select id="category" class="custom-select col-md-9" name="category">
+                {categoryOptions}
+            </select>
+        </div>
+
+        <!-- Input Description -->
+        <div class="form-group row">
+            {error_description}
+            <label class="col-md-3 col-form-label" for="description">Votre article :</label>
+            <input id="description" name="description" class="col-md-9 form-control" value="{description}" type="text">
+        </div>
+
+        {authorModification}
+
+
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <button type="submit" class="offset-md-3 btn btn-success">Soumettre</button>
+        </div>
+    </form>
+</div>
+
+

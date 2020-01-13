@@ -1,0 +1,28 @@
+
+
+<div class="row">
+    <!-- ########## -->
+    <!-- Formulaire -->
+    <!-- ########## -->
+    <form class="col-12 col-md-9" method="POST" action="index.php?controller=user&action=editPassword">
+        
+        
+        <!-- Input Password -->
+        <div class="form-group row">
+            {error_password}
+            <label class="col-md-3 col-form-label" for="password">Entrez un Password :</label>
+            <input class="col-md-9 form-control" id="password" name="password" type="password" placeholder="Enter a new password">
+            <label class="col-md-3 col-form-label">Vérifier votre Password: </label>
+            <input class="col-md-9 form-control" id="password_check" name="password_check" type="password" placeholder="Verify your password">
+            
+        </div>
+        
+    
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <button type="submit" class="offset-md-3 btn btn-success">Soumettre</button>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,92 @@
+img {
+    width: 100%;
+    height:auto;
+}
+
+.showMoreBtn {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hiddenBtn {
+    display: none;
+}
+
+p.description {
+    line-height: 1em;
+    height: auto;
+}
+
+p.hidenContent {
+    line-height: 1em;
+    height: 4.15em;
+    overflow: hidden;
+}
+
+
+.categoryName {
+    font-style: italic;
+}
+
+.avatar {
+    max-width: 8em;
+}
+
+.avatar_choice {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar_choice label{
+    min-width: 4em;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.avatar_choice input {
+    display: none;
+}
+.avatar_choice .fa-edit {
+    font-size: 4em;
+}
+
+.avatar_choice:hover label{
+    visibility: visible;
+}
+
+aside.userData {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 2em;
+    position: sticky;
+    top: 5em;
+}
+
+aside.userData h3 {
+    text-decoration: underline;
+}
+
+aside.userData h6 {
+    font-style: italic;
+    color: gray;
+}
+
+.sticky_custom {
+    position: sticky;
+    top: 5em;
+    background-color: white;
+}
+
+/*! ############################### */
+/*! ----- GLOBAL STYLES START ----- */
+/*! ############################### */
+
+
+

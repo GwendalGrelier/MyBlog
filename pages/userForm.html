@@ -1,0 +1,76 @@
+
+
+<div class="row">
+    <!-- ########## -->
+    <!-- Formulaire -->
+    <!-- ########## -->
+    <form class="col-12 col-md-9" method="POST" action="index.php?controller=user&action={action}">
+        
+        <!-- Input ID -->
+        <div class="form-group row" {display}>
+            <label class="col-md-3 col-form-label"  for="id">ID :</label>
+            <input class="col-md-9 form-control" id="id" name="id" type="text" value="{id}" readonly>
+        </div>
+
+        <!-- Input UserName -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="username">Choisissez un UserName :</label>
+            <input class="col-md-5 form-control" id="username" name="username" type="text" value="{username}" placeholder="User Name">
+            {rank_select}
+        </div>
+
+        <!-- Input Name -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="name">Votre Nom :</label>
+            <input class="col-md-9 form-control" id="name" name="name" type="text" value="{name}" placeholder="Family Name">
+        </div>
+
+        <!-- Input FirstName -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="firstname">Votre Prénom :</label>
+            <input class="col-md-9 form-control" id="firstname" name="firstname" type="text" value="{firstname}" placeholder="First Name">
+        </div>
+        
+        <!-- Input Password -->
+        <div class="form-group row">
+            {error_password}
+            <label class="col-md-3 col-form-label" for="password">Entrez un Password :</label>
+            <input class="col-md-9 form-control" id="password" name="password" type="password" value="{password}" {password_protection} placeholder="Enter a password">
+            <label class="col-md-3 col-form-label"></label>
+            {password_complement}
+            
+            
+        </div>
+        
+        <!-- Input Avatar -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="avatar">Add an Avatar</label>
+            <div class='avatar_choice col-3'>
+                <label class="col-md-3 col-form-label" for="avatar"><i class="fas fa-edit"></i></label>
+                <img src="img/default-user-image.png" alt="Choose an avatar">
+                <input type="file" name="avatar" id="avatar">
+            </div>
+        </div>
+        
+        <!-- Input Quote -->
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="quote">Message personnalisé :</label>
+            <input class="col-md-9 form-control" id="quote" name="quote" type="text" value="{quote}" placeholder="Une citation ?">
+        </div>
+
+        <!-- Input Creation Date -->
+        <div class="form-group row" {display}>
+            <label class="col-md-3 col-form-label" for="creation_date">Date d'inscription :</label>
+            <input class="col-md-9 form-control" id="creation_date" name="creation_date" type="text" value="{creation_date}" readonly>
+        </div>
+
+
+
+        <!-- Submit Button -->
+        <div class="form-group row">
+            <button type="submit" class="offset-md-3 btn btn-success">Soumettre</button>
+        </div>
+    </form>
+</div>
+
+

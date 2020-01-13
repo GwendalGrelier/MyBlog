@@ -1,0 +1,48 @@
+Unauthentified user:
+	- News -> displayHome (won't see nav buttons, and edit/delete buttons. Articles ordered by date)
+	- Security 	-> displayLoginForm
+				-> login
+
+Authentified user:
+	Rank 3 (user) :
+		- News 	-> displayHome (won't see nav button, will see Edit/Delete article for his own articles)
+				-> newArticle (Author will be set as the logged in user)
+				-> editArticleForm (only his articles)
+				-> deleteArticle (only his articles)
+		- Security 	-> logout 				
+
+	Rank 2 (moderateur) :
+		- News 	-> all
+				-> Can modify except the author
+		- Security -> logout				
+		- category	-> displayHome
+					-> new Category
+					-> edit Category
+					-> delete Category
+		- user 	-> display (ordered by rank)
+				-> add user (only with user rank)
+				-> edit user (cannot modify rank)
+				-> delete user (only with lower rank thank him)
+
+	Rank 1 (Admin) :
+		- News 	-> all
+				-> Can modify even the author
+		- Security -> logout				
+		- category -> all
+		- user	-> display (ordered by rank)
+				-> add new (only with user rank)
+				-> edit (can set rank to any)
+				-> delete user (not self and other admins)
+
+			
+Functionnalities:
+	- If the addUserForm is not filled in correctly, the form is displayed again with stored values and error message
+	- Same for News
+
+	- The nav is updated with username containing a link to the user page
+
+
+To Do:
+- modify password
+- avatar modification
+- create sign in for new users
