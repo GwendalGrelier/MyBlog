@@ -42,7 +42,7 @@
     //       5 => string 'editArticle' (length=11)
     //       6 => string 'deleteArticle' (length=13)
 
-
+// haha
     // Get requested controller
     // Default is NewsController
     $requested_controller = "NewsController";
